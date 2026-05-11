@@ -105,7 +105,7 @@
 <header>
   <div class="brand">American Hero Tracker</div>
   <h1>Privacy Policy</h1>
-  <div class="updated">Effective Date: May 9, 2026 · Last Updated: May 9, 2026</div>
+  <div class="updated">Effective Date: May 11, 2026 · Last Updated: May 11, 2026</div>
 </header>
 
 <p>
@@ -122,12 +122,14 @@
 <ul>
   <li><strong>Account information:</strong> When you create an account, we collect your email address and a password (stored as a one-way cryptographic hash, never as plain text).</li>
   <li><strong>Collection data:</strong> Information about action figures you add to your collection, including condition, optional purchase date, optional purchase price, and optional notes you write.</li>
+  <li><strong>User-uploaded photos:</strong> Photos you choose to upload using the in-app camera or photo library picker. See Section 6 for full details.</li>
 </ul>
 
 <h3>Information We Do Not Collect</h3>
 <ul>
   <li>We do not collect your name, address, phone number, or any other personally identifying information beyond your email.</li>
-  <li>We do not access your contacts, photos, location, microphone, or camera.</li>
+  <li>We do not access your contacts, location, or microphone.</li>
+  <li>We access your camera and photo library only when you actively choose to upload a photo, and only to retrieve the photo you select.</li>
   <li>We do not use third-party advertising networks, analytics SDKs, or social media tracking.</li>
   <li>We do not collect information about how you use the App beyond what is required for it to function.</li>
 </ul>
@@ -138,11 +140,12 @@
 <ul>
   <li>To authenticate you and securely associate your collection with your account.</li>
   <li>To display your collection and calculate estimated values.</li>
+  <li>To display photos you have uploaded back to you in your collection.</li>
   <li>To respond to support requests when you contact us.</li>
 </ul>
 
 <p>
-  <strong>We do not sell, rent, or trade your personal information to anyone.</strong> We do not use your information for advertising or marketing purposes. We do not share your collection data with other users.
+  <strong>We do not sell, rent, or trade your personal information to anyone.</strong> We do not use your information for advertising or marketing purposes. We do not share your collection data or photos with other users.
 </p>
 
 <h2>3. Third-Party Services</h2>
@@ -151,12 +154,12 @@
 
 <h3>Supabase</h3>
 <p>
-  We use Supabase (operated by Supabase, Inc.) to store account credentials and collection data. Supabase processes data on our behalf and is bound by their own privacy practices. Their privacy policy is available at <a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a>.
+  We use Supabase (operated by Supabase, Inc.) to store account credentials, collection data, and uploaded photos. Supabase processes data on our behalf and is bound by their own privacy practices. Their privacy policy is available at <a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a>.
 </p>
 
 <h3>eBay</h3>
 <p>
-  The App queries publicly available eBay marketplace listings to compute estimated market values for action figures. <strong>No information about you is sent to eBay.</strong> eBay queries are server-side, anonymous, and contain only the figure name being looked up — never your email, account, or collection details.
+  The App queries publicly available eBay marketplace listings to compute estimated market values for action figures. <strong>No information about you is sent to eBay.</strong> eBay queries are server-side, anonymous, and contain only the figure name being looked up — never your email, account, collection details, or photos.
 </p>
 
 <h2>4. Data Security</h2>
@@ -165,8 +168,9 @@
 <ul>
   <li>All communication between the App and our servers uses HTTPS encryption.</li>
   <li>Passwords are stored as one-way cryptographic hashes (we cannot recover or read them).</li>
-  <li>Database access is protected by row-level security: your collection data is technically inaccessible to other users, even by direct database query.</li>
-  <li>Supabase, our database provider, maintains SOC 2 Type II certification.</li>
+  <li>Database access is protected by row-level security: your collection data and photos are technically inaccessible to other users, even by direct database query.</li>
+  <li>Uploaded photos are stored at unguessable URLs and are scoped to your account.</li>
+  <li>Supabase, our database and storage provider, maintains SOC 2 Type II certification.</li>
 </ul>
 
 <p>
@@ -179,16 +183,55 @@
 <ul>
   <li><strong>Access</strong> the information we have about you.</li>
   <li><strong>Correct</strong> inaccurate information.</li>
-  <li><strong>Delete</strong> your account and all associated data at any time.</li>
+  <li><strong>Delete</strong> your account, photos, and all associated data at any time.</li>
   <li><strong>Export</strong> your collection data in a machine-readable format.</li>
   <li><strong>Withdraw consent</strong> for the App to process your data, by deleting your account.</li>
 </ul>
 
 <div class="callout">
-  <strong>To delete your account:</strong> Email <a href="mailto:cansteydev@gmail.com">cansteydev@gmail.com</a> from the email address associated with your account, with the subject line "Delete my account." We will permanently delete your account and all associated data within 30 days. You will receive confirmation when the deletion is complete.
+  <strong>To delete your account:</strong> Email <a href="mailto:cansteydev@gmail.com">cansteydev@gmail.com</a> from the email address associated with your account, with the subject line "Delete my account." We will permanently delete your account, all uploaded photos, and all associated data within 30 days. You will receive confirmation when the deletion is complete.
 </div>
 
-<h2>6. California Privacy Rights (CCPA)</h2>
+<h2>6. User-Uploaded Photos</h2>
+
+<p>
+  The App allows you to upload photos of figures in your collection using your device's camera or photo library. These photos are stored on our servers (operated by Supabase) and displayed back to you within the App.
+</p>
+
+<h3>Ownership and rights</h3>
+<ul>
+  <li>You retain all ownership and copyright in photos you upload.</li>
+  <li>By uploading a photo, you grant us a limited license to store and display it to you within the App for the purpose of providing the App's functionality. We do not use, repurpose, share, or display your photos in any other context.</li>
+  <li>You represent that you have the right to upload any photo you submit, that the photo does not infringe on the rights of any third party, and that the photo does not violate any applicable law.</li>
+</ul>
+
+<h3>Privacy of your photos</h3>
+<ul>
+  <li>Your uploaded photos are private to your account. Other users of the App cannot see your photos.</li>
+  <li>Photos are stored at unguessable URLs, and access is restricted by database-level security policies.</li>
+  <li>We do not analyze, categorize, or extract metadata from your photos. We do not use them to train any AI or machine learning systems.</li>
+</ul>
+
+<h3>Camera and photo library permissions</h3>
+<ul>
+  <li>The App requests camera and photo library access only when you actively choose to upload a photo.</li>
+  <li>You can revoke these permissions at any time in your device's Settings app under Privacy &amp; Security.</li>
+  <li>Revoking permissions does not delete photos you have already uploaded. To delete uploaded photos, use the in-app delete option or contact us.</li>
+</ul>
+
+<h3>Acceptable content</h3>
+<p>
+  You agree not to upload photos that contain illegal content, content that infringes the intellectual property of others (beyond fair use), or content depicting other identifiable people without their consent. We reserve the right to remove any uploaded content that violates these terms or applicable law, and to terminate accounts that repeatedly violate these terms.
+</p>
+
+<h3>Deletion of photos</h3>
+<ul>
+  <li>You can delete any photo you have uploaded at any time from within the App.</li>
+  <li>When you delete a photo, it is permanently removed from our storage within 7 days.</li>
+  <li>Deletion of your account removes all associated photos.</li>
+</ul>
+
+<h2>7. California Privacy Rights (CCPA)</h2>
 
 <p>
   If you are a California resident, you have additional rights under the California Consumer Privacy Act (CCPA), including the right to know what personal information we collect, the right to delete your personal information, and the right to opt out of the sale of your personal information.
@@ -197,25 +240,25 @@
   <strong>We do not sell your personal information to anyone.</strong> To exercise any CCPA right, contact us at <a href="mailto:cansteydev@gmail.com">cansteydev@gmail.com</a>. We will respond within 45 days as required by law.
 </p>
 
-<h2>7. International Users</h2>
+<h2>8. International Users</h2>
 
 <p>
   The App and its servers are operated from the United States. By using the App, users outside the United States consent to having their information transferred to and processed in the United States, where data protection laws may differ from those of your jurisdiction.
 </p>
 
-<h2>8. Children's Privacy</h2>
+<h2>9. Children's Privacy</h2>
 
 <p>
   The App is not directed to children under the age of 13. We do not knowingly collect personal information from children under 13. If you become aware that a child has provided us with personal information, please contact us, and we will take steps to delete that information promptly.
 </p>
 
-<h2>9. Changes to This Policy</h2>
+<h2>10. Changes to This Policy</h2>
 
 <p>
   We may update this Privacy Policy from time to time. When we do, we will revise the "Last Updated" date at the top of this page. For significant changes, we will provide notice within the App. We encourage you to review this policy periodically.
 </p>
 
-<h2>10. Contact</h2>
+<h2>11. Contact</h2>
 
 <p>
   If you have questions about this Privacy Policy or our data practices, contact us at:
@@ -226,7 +269,7 @@
   Rock Hill, South Carolina, United States
 </div>
 
-<h2>11. Trademark Notice</h2>
+<h2>12. Trademark Notice</h2>
 
 <p>
   American Hero Tracker is an independent application developed for collectors. It is not affiliated with, endorsed by, sponsored by, or in any way officially connected with Hasbro, Inc. or any of its subsidiaries or affiliates. All trademarks, product names, and brand names referenced are the property of their respective owners.
